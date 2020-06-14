@@ -1,0 +1,47 @@
+-var ofertas = ["Ofertas del Día", "Servicio al Cliente", "Tarjetas de Regalo", "Listas", "Vender"]
+-var tituloCard = ["", "Herramienta", "Equipo", "Transporte"]
+-var repet = [1,2,3,4,5,6,7,8,9,1,1,1,1,1,,1,1,1,1,1,1,1,1,1,1,1]
+
+mixin targetUnidad() 
+    .target-product.p-2.position-relative
+        each n in repet
+            .target-unidad.mr-4
+                .target-unidad-img.rounded
+                    img(src="../images/svg/robot.svg", alt="alt")
+                .target-unidad-text#shadow-sm
+                    p.h5 Nombre de producto
+                    p Description
+                    p Precio
+                    p &starf;&starf;&starf;&starf;&star; / 36 Reseñas
+        
+
+mixin target(cuanto, title, id)
+    .container.m-s.pl-1.pr-1.pt-2(id=`${id}`)
+        h3.h4.mb-2.mt-2 #{tituloCard[title]}
+            if cuanto == 1
+                .position-relative
+                        +targetUnidad()
+                        .btnCar.d-flex.position-absolute.float-right
+                            .btnCaja.position-relatve.d-flex.justify-content-center.w-100.align-item-center
+                                a(href="#").text-whithttps://gitlab.com/carlos-Espinoza-perez/parecidoaamazon.gite.h4.m-auto.d-inline.c-pointer Cree su paquete
+                                img(src="../images/svg/shopping-cart.svg", alt="alt")
+
+            else
+                .position-relative
+                    +targetUnidad()
+                    .btnCar.d-flex.position-absolute.float-right
+                        .btnCaja.position-relatve.d-flex.justify-content-center.w-100.align-item-center
+                            a(href="#").text-whithttps://gitlab.com/carlos-Espinoza-perez/parecidoaamazon.gite.h4.m-auto.d-inline.c-pointer Cree su paquete
+                            img(src="../images/svg/shopping-cart.svg", alt="alt")
+
+                .position-relative
+                    +targetUnidad()
+                
+                    .btnCar.d-flex.position-absolute.float-right
+                        .btnCaja.position-relatve.d-flex.justify-content-center.w-100.align-item-center
+                            a(href="#").text-whithttps://gitlab.com/carlos-Espinoza-perez/parecidoaamazon.gite.h4.m-auto.d-inline.c-pointer Cree su paquete
+                            img(src="../images/svg/shopping-cart.svg", alt="alt")
+
+mixin btnTienda() 
+    .btnCar
+        img(src="../images/scg/shopping-cart.svg", alt="")

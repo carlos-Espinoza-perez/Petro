@@ -1,0 +1,15 @@
+.targeta
+    each i in [1,2,3]
+        .targeta-unidad.shadow-lg
+            h3.h4 #{tituloCard[i]}
+            .targeta-unidad-img
+                img(src=`../images/card/img-${i}.png`, alt="")    
+                .targeta-info
+                    //- p Mediante compras y cosas asi en la cual tendras tu objeto en la puerta de la cas
+                    //- a(href="#") #{mas[i]}
+                    a(href=`#${tituloCard[i]}`).btn.btn-primary.btn-lg.btn-block(type='button') Ver Mas
+    
+    .targeta-unidad.shadow.iniciarSeccionTarget
+        .content
+            h3.h5 Inicia sesión para vivir tu mejor experiencia
+            button.btn.btn-primary(type='button') Iniciar Seccion

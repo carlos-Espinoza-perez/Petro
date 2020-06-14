@@ -1,0 +1,48 @@
+header
+    nav.nav
+        .menu
+            div.nav-menu
+        span.nav-logo
+        .nav-left-input
+            div.nav-filtros
+                p.filtro-text Todos
+                img(src="../images/svg/Icon ionic-md-arrow-dropleft.svg", alt="alt")
+            input(type="text")
+            div.nav-buscar
+                img(src="../images/svg/search.svg", alt="")
+            
+        .nav-idioma
+            img(src="../images/svg/united-states.svg", alt="alt")
+            img(src="../images/svg/Icon ionic-md-arrow-dropleft copy.svg", alt="alt")
+
+        .nav-login
+            p    
+                | Hola identificate
+                br
+                strong Cuenta y lista
+
+        .nav-pedido
+            p
+                | Devoluciones
+                br
+                strong Y pedidos
+
+        .nav-carrito
+            img(src="../images/svg/shopping-cart.svg", alt="alt")
+            p 
+                strong Carrito
+
+.nav-adicional
+    .nav-adicional_ubicacion
+        .ubicacion
+        p 
+            | Enviar a
+            br
+            strong Nicaragua
+
+    .nav-adicional_ofertas
+        each n in ofertas
+            p #{n}
+
+    .nav-covid
+        h4 Respuesta ante el covid

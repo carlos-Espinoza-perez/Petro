@@ -1,0 +1,47 @@
+.nav
+    &-adicional
+        position relative
+        height 40px
+        background-color: #232f3e
+        display: flex
+        // justify-content: space-between
+        color #ccc
+
+        &_ubicacion
+            display: flex
+            margin: auto 10px
+
+            .ubicacion
+                background-image: url("../images/png/nav-sprite-global_bluebeacon-1x_optimized_layout1._CB468670774_.png")
+                width: 22px;
+                height: 22px;
+                background-position: -68px -340px;
+                margin: auto
+                margin-right: 5px
+
+            strong
+                color #fff
+
+        &_ofertas
+            font-size: 13px
+            display: flex
+            justify-content: space-between
+            margin-left: 100px
+            width: 40%
+            align-items: center
+
+            p 
+                cursor pointer
+
+            p:hover
+                color: white
+                
+
+    &-covid
+        color: white
+        display: flex
+        justify-content: right
+        position absolute
+        right: 10px
+        height 100%
+        align-items: center

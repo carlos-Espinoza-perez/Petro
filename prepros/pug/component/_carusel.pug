@@ -1,0 +1,21 @@
+.hero.position-relative
+    #carouselExampleControls.carousel.slide(data-ride='carousel' class="vh-100" style="z-index: -1")
+        .carousel-inner.h-100
+            each n in [1,2,3,4,5,6]
+                if n == 1
+                    .carousel-item.active
+                        img(src=`../images/carusel/img${n}.png`, alt="" class="d-block w-100")
+                else    
+                    .carousel-item
+                        img(src=`../images/carusel/img${n}.png`, alt="" class="w-100 d-block")
+
+        //- a.carousel-control-prev(href='#carouselExampleControls' class="h-25 mt-5 pt-5 align-items-start" role='button' data-slide='prev')
+        //-     div(style="width: 30px; transform: rotate(180deg)" class="mt-5")
+        //-         img(src="../images/svg/next.svg", alt="alt" style="z-index: 1")
+        //-     span.sr-only Previous
+
+        //- a.carousel-control-next(href='#carouselExampleControls' class="h-25 align-items-start mt-5 pt-5" role='button' data-slide='next')
+        //-     div(style="width: 30px;" class="mt-5")
+        //-         img(src="../images/svg/next.svg", alt="alt")
+        //-     span.sr-only
+    include _card.pug
