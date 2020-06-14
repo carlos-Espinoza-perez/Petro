@@ -294,6 +294,11 @@ header .nav-carrito img {
   border-radius: 20px 20px 0px 0px;
   padding: 9px;
 }
+
+.target-unidad-text p {
+  margin: .25rem;
+}
+
 .btn-siguiente {
   width: 25px;
   height: 25px;
@@ -324,4 +329,9 @@ header .nav-carrito img {
   position: absolute;
   right: 2px;
   bottom: 0px;
+}
+
+
+p {
+  font-size: 14px;
 }
