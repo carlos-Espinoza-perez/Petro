@@ -323,12 +323,19 @@ header .nav-carrito img {
   opacity: 0;
 }
 .target-product .target-unidad-img {
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
   width: 220px;
   border-radius: 8px 8px !important;
+  border: 1px solid var(--colorBase);
+  height: 220px;
+  overflow: hidden;
 }
 .target-product .target-unidad-img img {
-  width: 90%;
+  /* width: 100%; */
+  /* margin-top: 14px; */
+  height: 70%;
+  margin: 14%;
+  border-radius: inherit;
 }
 .target-product .target-unidad-text {
   width: 90%;
@@ -339,6 +346,8 @@ header .nav-carrito img {
   margin-right: auto;
   border-radius: 20px 20px 0px 0px;
   padding: 9px;
+  border: 1px solid var(--colorNav);
+  border-bottom: none;
 }
 
 .target-unidad-text p {
